@@ -9,12 +9,14 @@
   <h1>Daftar Buku</h1>
   <p>Silakan pilih buku untuk melihat detailnya.</p>
 
-  @foreach ($books as $item)
+  @foreach ($books as $book)
     <ul>
-      <li>{{ $item['title'] }}</li>
-      <li>{{ $item['description'] }}</li>
-      <li>Harga: ${{ $item['price'] }}</li>
-      <li>Stok: {{ $item['stock'] }}</li>
+      <li>{{ $book['title'] }}</li>
+      <li>{{ $book['description'] }}</li>
+      <li>Harga: ${{ $book['price'] }}</li>
+      <li>Stok: {{ $book['stock'] }}</li>
+      <li>Genre: {{ $book['genre_id'] }}</li>
+      <li>Author: {{ $book['author_id'] }}</li>
     </ul>
   @endforeach
 </body>

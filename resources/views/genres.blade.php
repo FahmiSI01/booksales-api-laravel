@@ -8,14 +8,11 @@
 <body>
   <h1>Daftar Genres</h1>
   <p>Silakan pilih genre untuk melihat detailnya.</p>
-  @foreach ($genres as $g)
+  @foreach ($genres as $genre)
   <ul>
-      <li>Nama: {{ $g['name'] }}</li>
-      <li>Deskripsi: {{ $g['description'] }}</li>
+      <li>Nama: {{ $genre['name'] }}</li>
+      <li>Deskripsi: {{ $genre['description'] }}</li>
   </ul>
   @endforeach
-
-  <a href="/authors">Lihat Author</a>
-
 </body>
 </html>

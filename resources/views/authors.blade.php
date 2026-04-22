@@ -9,13 +9,11 @@
     <h1>Daftar Authors</h1>
     <p>Silakan pilih author untuk melihat detailnya.</p>
 
-    @foreach ($authors as $a)
+    @foreach ($authors as $author)
     <ul>
-        <li>Nama: {{ $a['name'] }}</li>
-        <li>Bio: {{ $a['bio'] }}</li>
+        <li>Nama: {{ $author['name'] }}</li>
+        <li>Bio: {{ $author['bio'] }}</li>
     </ul>
     @endforeach
-
-    <a href="/genres">Lihat Genre</a>
 </body>
 </html>
