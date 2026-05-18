@@ -12,6 +12,10 @@ class Transaction extends Model
         'customer_id',
         'book_id',
         'total_amount',
+        'status',
+        'payment_method',
+        'payment_status',
+        'shipping_address'
     ];
 
     public function user(){
